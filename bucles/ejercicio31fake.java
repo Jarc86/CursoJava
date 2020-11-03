@@ -9,21 +9,19 @@ import java.util.*;
  *
  * @author juan
  */
-public class ejercicio33 {
+public class ejercicio31fake {
     public static void main(String[] args) {
-        
         Scanner sc = new Scanner(System.in);
         
-        int base,exp,potencia=1;
-        System.out.println("Introduce base: ");
-        base =sc.nextInt();
-        System.out.println("Introduce exponente: ");
-        exp = sc.nextInt();
+        System.out.println("Introduce número");
+        int n = sc.nextInt();
         
-        for (int i = 0; i < exp; i++) {
+        for (int i = 0; i < n+1; i++) {
             
-            potencia = potencia*base;
+            for (int j = 0; j < i; j++) {
+                System.out.print(j);
+            }
+            System.out.println("");
         }
-        System.out.println(potencia);
     }
 }
